@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/img/homepage/nav-logo/nav-logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/shared.css" />
+    <link rel="stylesheet" href="/css/queries/queries-shared.css" />
+    <link rel="stylesheet" href="/css/homepage.css" />
+    <link rel="stylesheet" href="/css/queries/queries-homepage.css" />
+
+    <script defer src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="/js/shared.js"></script>
+    <script defer src="/js/homepage.js"></script>
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="/index.html">
+          <img
+            class="header__logo"
+            src="/img/homepage/nav-logo/nav-logo.jpg"
+            alt="company-logo"
+          />
+        </a>
+
+        <button class="button mobile-nav-button">
+          <i class="ph-dots-three"></i>
+        </button>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/">Home</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/search/">Search</a>
+            </li>
+            <li class="navigation__list--item dropdown">
+              <a class="navigation__list--link" href="#"
+                >About <i class="ph-caret-down-fill"></i
+              ></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__list--item">
+                    <a class="dropdown-menu__list--link" href="/about-team"
+                      >Meet the Team</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/about-us">About Us</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/sales">Sales</a>
+            </li>
+            <li class="navigation__list--item dropdown">
+              <a class="navigation__list--link" href="#"
+                >Lettings <i class="ph-caret-down-fill"></i
+              ></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__list--item">
+                    <a class="dropdown-menu__list--link" href="/lettings"
+                      >Lettings</a
+                    >
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      class="dropdown-menu__list--link"
+                      href="/tenant-information"
+                      >Tenant Information
+                    </a>
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      class="dropdown-menu__list--link"
+                      href="/landlord-information"
+                      >Landlord Information
+                    </a>
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      target="_blank"
+                      class="dropdown-menu__list--link"
+                      href="/img/clientmoneyprotection.pdf"
+                      >Client Money Protection Certificate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/news">News</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/guild">Guild</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/contact">Contact</a>
+            </li>
+            <li class="navigation__list--item navigation__list--search-bar">
+              <a class="navigation__list--link" href="#"
+                ><i class="ph-magnifying-glass-bold"></i
+              ></a>
+              <div class="search-box">
+                <input
+                  class="search-box__textbox"
+                  type="text"
+                  placeholder="Enter location..."
+                />
+
+                <button
+                  class="button button-primary search-box__button"
+                  type="submit"
+                >
+                  Go
+                </button>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a
+                class="navigation__list--link"
+                href="/bookfreevaluation/index.html"
+                >Book A Free Evaluation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mobile-navigation">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/">Home</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/search/">Search</a>
+            </li>
+            <li
+              data-dropdownbutton="about"
+              class="navigation__list--item dropdown mobile-dropdown-button"
+            >
+              <a class="navigation__list--link" href="#"
+                >About <i class="ph-caret-down-fill"></i
+              ></a>
+
+              <div data-dropdown="about" class="mobile-dropdown-menu">
+                <ul class="mobile-dropdown-menu__list">
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/about-team"
+                      >Meet the Team</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/about-us">About Us</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/sales">Sales</a>
+            </li>
+            <li
+              data-dropdownbutton="lettings"
+              class="navigation__list--item dropdown mobile-dropdown-button"
+            >
+              <a class="navigation__list--link" href="#"
+                >Lettings <i class="ph-caret-down-fill"></i
+              ></a>
+              <div data-dropdown="lettings" class="mobile-dropdown-menu">
+                <ul class="mobile-dropdown-menu__list">
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a class="mobile-dropdown-menu__list--link" href="/lettings"
+                      >Lettings</a
+                    >
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/tenant-information"
+                      >Tenant Information
+                    </a>
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/landlord-information"
+                      >Landlord Information
+                    </a>
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      target="_blank"
+                      class="mobile-dropdown-menu__list--link"
+                      href="/img/clientmoneyprotection.pdf"
+                      >Client Money Protection Certificate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/news">News</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/guild">Guild</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/contact">Contact</a>
+            </li>
+            <li class="navigation__list--item navigation__list--search-bar">
+              <a class="navigation__list--link" href="#"
+                ><i class="ph-magnifying-glass-bold"></i
+              ></a>
+              <div class="search-box">
+                <input
+                  class="search-box__textbox"
+                  type="text"
+                  placeholder="Enter location..."
+                />
+
+                <button
+                  class="button button-primary search-box__button"
+                  type="submit"
+                >
+                  Go
+                </button>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a
+                class="navigation__list--link"
+                href="/bookfreevaluation/index.html"
+                >Book A Free Evaluation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="section-hero">
+        <!-- carousel -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <div class="carousel">
+          <!-- slides -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="carousel__slide carousel__slide--1" data-slide="0">
+            <div class="carousel__text-box">
+              <h1 class="heading-primary">Estate Agency Done Differently</h1>
+              <a
+                class="button button-white carousel__button"
+                href="/bookfreevaluation"
+                >Book a Free Valuation</a
+              >
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="carousel__slide carousel__slide--2" data-slide="1">
+            <div class="carousel__text-box">
+              <h1 class="heading-primary">Estate Agency Done Differently</h1>
+              <a
+                class="button button-white carousel__button"
+                href="/bookfreevaluation"
+                >Book a Free Valuation</a
+              >
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="carousel__slide carousel__slide--3" data-slide="2">
+            <div class="carousel__text-box">
+              <h1 class="heading-primary">Estate Agency Done Differently</h1>
+              <a
+                class="button button-white carousel__button"
+                href="/bookfreevaluation"
+                >Book a Free Valuation</a
+              >
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="carousel__slide carousel__slide--4" data-slide="3">
+            <div class="carousel__text-box">
+              <h1 class="heading-primary">Estate Agency Done Differently</h1>
+              <a
+                class="button button-white carousel__button"
+                href="/bookfreevaluation"
+                >Book a Free Valuation</a
+              >
+            </div>
+          </div>
+
+          <!-- carousel dots -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="carousel__dots">
+            <!-- <button class="button dot dot--1 dot--active"></button>
+          <button class="button dot dot--2"></button>
+          <button class="button dot dot--3"></button>
+          <button class="button dot dot--4"></button> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="free-valuation">
+        <div class="free-valuation__left"></div>
+        <div class="free-valuation__center">
+          <p class="free-valuation__info">FREE Instant Online Valuation</p>
+          <button class="button free-valuation__button">Click here</button>
+        </div>
+        <div class="free-valuation__right"></div>
+      </section>
+
+      <section class="rent-buy-sell-let">
+        <div class="container rent-buy-sell-let__header">
+          <h2 class="heading-secondary">
+            Matching <span class="secondary-color-text">Buyers</span> With
+            Sellers
+          </h2>
+
+          <p class="rent-buy-sell-let__header--info">
+            in and around the London Boroughs of Redbridge, Barking & Dagenham,
+            Havering.
+          </p>
+        </div>
+
+        <div class="container rent-buy-sell-let__main">
+          <p class="rent-buy-sell-let__main--text">I'm looking ...</p>
+
+          <div class="rent-buy-sell-let__main--buttons">
+            <a class="button button--light" href="/search/">To Buy</a>
+            <a class="button button--light" href="/search/">To Rent</a>
+            <a class="button button--dark span-2" href="/bookfreevaluation/"
+              >To Sell or Let</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="home-features">
+        <div class="container home-features__row">
+          <div class="home-features__box">
+            <a class="link" href="https://www.feefo.com/">
+              <div
+                class="home-features__box--image-box home-features__box--image-box--1"
+              ></div>
+              <p class="home-features__box--text">Reviews</p>
+            </a>
+          </div>
+          <div class="home-features__box">
+            <a class="link" href="https://ezines-v2.propertylogic.net/200290">
+              <div
+                class="home-features__box--image-box home-features__box--image-box--2"
+              ></div>
+              <p class="home-features__box--text">Ezine</p>
+            </a>
+          </div>
+
+          <div class="home-features__box">
+            <a class="link" href="/bookfreevaluation/">
+              <div
+                class="home-features__box--image-box home-features__box--image-box--3"
+              ></div>
+              <p class="home-features__box--text">
+                Looking to Sell or Let your Home
+              </p>
+            </a>
+          </div>
+
+          <div class="home-features__box">
+            <a class="link" href="/guild/">
+              <div
+                class="home-features__box--image-box home-features__box--image-box--4"
+              ></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="properties">
+        <div class="container properties__header">
+          <h2 class="heading-secondary">Recently Added Properties</h2>
+        </div>
+
+        <div class="container properties__main">
+          <!--  -->
+          <!--  -->
+          <!--  -->
+
+          <button class="button arrow--left">
+            <i class="ph-caret-left-bold"></i>
+          </button>
+          <button class="button arrow--right">
+            <i class="ph-caret-right-bold"></i>
+          </button>
+          <div class="properties-carousel">
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <div
+              class="properties-carousel__slide properties-carousel__slide-1"
+            >
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--1">
+                    <div class="card__photos">
+                      <span>8</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;525,000</p>
+                    <p class="card__text--info">
+                      6 Bedroom End of Terrace House For Sale
+                    </p>
+                    <p class="card__text--address">Ilford Lane, ILFORD, IG1</p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--2">
+                    <div class="card__photos">
+                      <span>12</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;600,000</p>
+                    <p class="card__text--info">
+                      3 bedroom, semi-detached house For Sale
+                    </p>
+
+                    <p class="card__text--address">The Drive, ILFORD. IG1</p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--3">
+                    <div class="card__photos">
+                      <span>14</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;550,000</p>
+                    <p class="card__text--info">
+                      4 bedroom, Bunglow house For Sale
+                    </p>
+                    <p class="card__text--address">
+                      Coventry Road, ILFORD. IG1
+                    </p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <div
+              class="properties-carousel__slide properties-carousel__slide-2"
+            >
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--4">
+                    <div class="card__photos">
+                      <span>21</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;570,000</p>
+                    <p class="card__text--info">
+                      6 Bedroom End of Terrace House For Sale
+                    </p>
+                    <p class="card__text--address">Ilford Lane, ILFORD, IG1</p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--5">
+                    <div class="card__photos">
+                      <span>15</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;630,000</p>
+                    <p class="card__text--info">
+                      3 bedroom, semi-detached house For Sale
+                    </p>
+
+                    <p class="card__text--address">The Drive, ILFORD. IG1</p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--6">
+                    <div class="card__photos">
+                      <span>24</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;624,000</p>
+                    <p class="card__text--info">
+                      4 bedroom, Bunglow house For Sale
+                    </p>
+                    <p class="card__text--address">
+                      Coventry Road, ILFORD. IG1
+                    </p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <div
+              class="properties-carousel__slide properties-carousel__slide-3"
+            >
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--7">
+                    <div class="card__photos">
+                      <span>11</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;567,000</p>
+                    <p class="card__text--info">
+                      4 Bedroom End of Terrace House For Sale
+                    </p>
+                    <p class="card__text--address">Ilford Lane, ILFORD, IG1</p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--8">
+                    <div class="card__photos">
+                      <span>16</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;850,000</p>
+                    <p class="card__text--info">
+                      5 bedroom, semi-detached house For Sale
+                    </p>
+
+                    <p class="card__text--address">The Drive, ILFORD. IG1</p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--9">
+                    <div class="card__photos">
+                      <span>9</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;570,000</p>
+                    <p class="card__text--info">
+                      2 bedroom, Bunglow house For Sale
+                    </p>
+                    <p class="card__text--address">
+                      Coventry Road, ILFORD. IG1
+                    </p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <div
+              class="properties-carousel__slide properties-carousel__slide-4"
+            >
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--10">
+                    <div class="card__photos">
+                      <span>20</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;420,000</p>
+                    <p class="card__text--info">
+                      2 Bedroom End of Terrace House For Sale
+                    </p>
+                    <p class="card__text--address">Ilford Lane, ILFORD, IG1</p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--11">
+                    <div class="card__photos">
+                      <span>14</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;650,000</p>
+                    <p class="card__text--info">
+                      6 bedroom, semi-detached house For Sale
+                    </p>
+
+                    <p class="card__text--address">
+                      Collinwood Gardens, CLAYHALL, IG5
+                    </p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="card">
+                <a class="link" href="/house-listing/">
+                  <div class="card__image card__image--12">
+                    <div class="card__photos">
+                      <span>16</span>
+                      <span><i class="ph-camera-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="card__text">
+                    <p class="card__text--price">&#163;700,000</p>
+                    <p class="card__text--info">
+                      4 bedroom, Bunglow house For Sale
+                    </p>
+                    <p class="card__text--address">
+                      Green Lane, SEVEN KINGS, IG3
+                    </p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mortgage">
+        <div class="container mortgage__main">
+          <div class="mortgage__calc mortgage__main--box">
+            <h2 class="heading-secondary">Mortgage Calculator</h2>
+            <form class="mortgage-form">
+              <div class="form-section">
+                <label for="price"
+                  >Purchase<br />
+                  price</label
+                >
+                <div class="input-box">
+                  <p class="input-box__unit">&#163;</p>
+                  <input id="price" type="text" value="250000" />
+                </div>
+              </div>
+
+              <div class="form-section">
+                <label for="deposit"
+                  >Deposit<br />
+                  amount</label
+                >
+                <div class="input-box">
+                  <p class="input-box__unit">&#163;</p>
+                  <input id="deposit" type="text" value="50000" />
+                </div>
+              </div>
+
+              <div class="form-section">
+                <label for="interest"
+                  >Interest<br />
+                  rate</label
+                >
+                <div class="input-box">
+                  <input id="interest" type="text" value="1.5" />
+                  <p class="input-box__unit">%</p>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <label for="period"
+                  >Mortgage <br />
+                  period</label
+                >
+                <div class="input-box">
+                  <input id="period" type="text" value="1.5" />
+                  <p class="input-box__unit">Yr</p>
+                </div>
+              </div>
+            </form>
+
+            <button type="submit" class="button form-button">Estimate</button>
+          </div>
+          <!--  -->
+          <!--  -->
+          <!--  -->
+
+          <div class="stamp-form-box mortgage__main--box">
+            <h2 class="heading-secondary">Stamp Duty Calculator</h2>
+
+            <form class="stamp-form">
+              <div class="form-section">
+                <div>
+                  <label for="price">Purchase price</label>
+                  <div class="input-box">
+                    <p class="input-box__unit">&#163;</p>
+                    <input id="price" type="text" value="250000" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div>
+                  <label for="place"
+                    >Where are you going to buy the property?</label
+                  >
+                  <div class="input-box">
+                    <select id="place">
+                      <option value="">England or Northern Ireland</option>
+                      <option value="">Wales</option>
+                      <option value="">Scotland</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <p class="form-info">
+              Stamp Duty Land Tax (SDLT) calculation for completions from 1
+              October 2021 onwards. All calculations applicable to UK residents
+              only.
+            </p>
+
+            <button type="submit" class="button form-button">Calculate</button>
+          </div>
+
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="free-online mortgage__main--box">
+            <h2 class="heading-secondary">Free Online Valuation</h2>
+
+            <div class="free-online-valuation">
+              <p class="form-info">
+                An online house valuation is a useful way to get a quick and
+                easy estimate of the real price of your property. By answering a
+                few different questions our free calculator can give you an idea
+                of how much money you could potentially make from the sale of
+                your home.
+              </p>
+
+              <button type="submit" class="button form-button">
+                Free Online Valuation
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <!--  -->
+        </div>
+      </section>
+
+      <section class="section-featured-in">
+        <div class="container">
+          <div class="featured-in__logos">
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/1.png" alt="a photo" />
+            </a>
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/2.png" alt="a photo" />
+            </a>
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/3.png" alt="a photo" />
+            </a>
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/4.png" alt="a photo" />
+            </a>
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/5.png" alt="a photo" />
+            </a>
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/6.png" alt="a photo" />
+            </a>
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/7.png" alt="a photo" />
+            </a>
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/8.png" alt="a photo" />
+            </a>
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/9.jpg" alt="a photo" />
+            </a>
+            <a class="featured-in__logo--box" href="#">
+              <img src="/img/homepage/small-logos/10.png" alt="a photo" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="float-valuation-button">
+        <a href="#">
+          <img
+            src="/img/homepage/fixed/book-property-valuation.svg"
+            alt="book-property-valuation logo"
+        /></a>
+      </div>
+
+      <div style="visibility: hidden; opacity: 0" class="backdrop"></div>
+
+      <section
+        style="visibility: hidden; opacity: 0"
+        class="section-modal-book-valuation-hz"
+      >
+        <button class="button button-closemodal">
+          <i class="ph-x-bold"></i>
+        </button>
+
+        <div class="modal-box logo-and-instructions">
+          <div class="modal-logo-container">
+            <img src="/img/homepage/nav-logo/nav-logo.jpg" alt="company logo" />
+          </div>
+
+          <p class="modal-instructions">
+            If you want to talk through your selling, buying or renting options,
+            then please get in touch.
+          </p>
+        </div>
+
+        <div class="address-searching">
+          <h4 class="form-top-heading">I'm looking to</h4>
+
+          <div class="two-options">
+            <div class="input-label-container">
+              <div class="input-container">
+                <input
+                  id="sell"
+                  type="radio"
+                  name="choose-action"
+                  value="sell"
+                />
+                <span class="checkmark"></span>
+              </div>
+
+              <label for="sell">Sell my property</label>
+            </div>
+
+            <div class="input-label-container">
+              <div class="input-container">
+                <input id="let" type="radio" name="choose-action" value="let" />
+                <span class="checkmark"></span>
+              </div>
+
+              <label for="let">Let my property</label>
+            </div>
+          </div>
+
+          <div class="post-code">
+            <p class="label-main-form">
+              Please enter the postcode of your property and select the address
+            </p>
+
+            <div class="post-code-box--and--button">
+              <input
+                class="post-code-box"
+                type="text"
+                placeholder="Enter postcode"
+              />
+
+              <button class="button find-post-code" disabled="disabled">
+                Find <i class="ph-caret-right"></i>
+              </button>
+            </div>
+
+            <button class="button no-address">Can't find your address?</button>
+          </div>
+
+          <div class="hidden-address-box">
+            <p class="label-main-form">
+              Please enter the address of your property. *
+              <span>Required field.</span>
+            </p>
+            <form class="regular-information">
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >ADDRESS LINE 1:*</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >ADDRESS LINE 2:</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name">TOWN / CITY: *</label>
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >COUNTY / STATE:</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name">POSTAL CODE: *</label>
+                <input id="name" type="text" />
+              </div>
+
+              <button type="button" class="button back-to-address">
+                Back to address lookup
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="regular-information-box">
+          <form class="regular-information">
+            <div class="input-box">
+              <label class="label-main-form" for="name">Your Name</label>
+              <input id="name" type="text" />
+            </div>
+
+            <div class="input-box">
+              <label class="label-main-form" for="name">Contact Number</label>
+              <input id="name" type="tel" />
+            </div>
+
+            <div class="input-box">
+              <label class="label-main-form" for="name">Email</label>
+              <input id="name" type="email" />
+            </div>
+
+            <button class="button send-valuation-button">
+              Send Valuation Request
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section
+        style="visibility: hidden; opacity: 0; transform: translateY(-20%)"
+        class="section-modal-book-valuation-vt"
+      >
+        <div class="modal-property-valuation">
+          <div class="modal-property-valuation__header">
+            <h2 class="modal-property-valuation__header--heading">
+              BOOK A PROPERTY VALUATION
+            </h2>
+            <button class="button button-closemodal">
+              <i class="ph-x-bold"></i>
+            </button>
+          </div>
+
+          <div class="modal-property-valuation__main">
+            <div class="logo-box">
+              <img
+                src="/img/homepage/nav-logo/nav-logo.jpg"
+                alt="company-logo"
+              />
+            </div>
+
+            <h3 class="modal-property-valuation__main--heading">
+              Request your FREE Property Valuation
+            </h3>
+
+            <div class="form-layout">
+              <h4 class="form-top-heading">I'm looking to</h4>
+
+              <div class="two-options">
+                <div class="input-label-container">
+                  <div class="input-container">
+                    <input
+                      id="sell"
+                      type="radio"
+                      name="choose-action"
+                      value="sell"
+                    />
+                    <span class="checkmark"></span>
+                  </div>
+
+                  <label for="sell">Sell my property</label>
+                </div>
+
+                <div class="input-label-container">
+                  <div class="input-container">
+                    <input
+                      id="let"
+                      type="radio"
+                      name="choose-action"
+                      value="let"
+                    />
+                    <span class="checkmark"></span>
+                  </div>
+
+                  <label for="let">Let my property</label>
+                </div>
+              </div>
+
+              <div class="post-code-vt">
+                <p class="label-main-form">
+                  Please enter the postcode of your property and select the
+                  address
+                </p>
+
+                <div class="post-code-box--and--button">
+                  <input
+                    class="post-code-box"
+                    type="text"
+                    placeholder="Enter postcode"
+                  />
+
+                  <button class="button find-post-code" disabled="disabled">
+                    Find <i class="ph-caret-right"></i>
+                  </button>
+                </div>
+
+                <button class="button no-address-vt">
+                  Can't find your address?
+                </button>
+              </div>
+
+              <div class="hidden-address-box-vt">
+                <p class="label-main-form">
+                  Please enter the address of your property. *
+                  <span>Required field.</span>
+                </p>
+                <form class="regular-information">
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >ADDRESS LINE 1:*</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >ADDRESS LINE 2:</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >TOWN / CITY: *</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >COUNTY / STATE:</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >POSTAL CODE: *</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <button type="button" class="button back-to-address-vt">
+                    Back to address lookup
+                  </button>
+                </form>
+              </div>
+
+              <div class="regular-information-box">
+                <form class="regular-information">
+                  <div class="input-box">
+                    <label class="label-main-form" for="name">Your Name</label>
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >Contact Number</label
+                    >
+                    <input id="name" type="tel" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name">Email</label>
+                    <input id="name" type="email" />
+                  </div>
+
+                  <button class="button send-valuation-button">
+                    Send Valuation Request
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <div class="container">
+        <div class="footer__header">
+          <i class="ph-facebook-logo-thin footer__header--logo"></i
+          ><i class="ph-instagram-logo-thin footer__header--logo"></i>
+        </div>
+
+        <div class="footer__main">
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="footer__main--contact">
+            <h2 class="heading-secondary">Contact Us</h2>
+            <div class="address">
+              <h3 class="heading-tertiary">Payne & Co</h3>
+
+              <address>
+                151 Cranbrook Road <br />
+                Ilford <br />
+                IG1 4TA
+              </address>
+
+              <a class="link" href="mailto:ilford@payneandco.co.uk"
+                >ilford@payneandco.co.uk
+              </a>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!--  -->
+
+            <div class="address">
+              <h3 class="heading-tertiary">Lettings and Management</h3>
+
+              <address>
+                187 Cranbrook Road<br />
+                Ilford <br />
+                IG1 4TA
+              </address>
+              <a class="link" href="tel:020 8554 6233">020 8554 6233</a>
+              <a class="link" href="mailto:lettings@payneandco.co.uk"
+                >lettings@payneandco.co.uk
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__about">
+            <h2 class="heading-secondary">About Us</h2>
+
+            <p class="footer__about--info">
+              Established in May 1997 Payne & Co is a leading independent estate
+              agent providing a comprehensive service to our customers including
+              Residential Sales, Lettings and Property Management within the
+              London Boroughs of Redbridge, Barking & Dagenham, Havering and
+              surrounding areas.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__footer">
+          <div class="footer__footer--info-box">
+            <p class="footer__footer__info">
+              2022 &copy; Payne & Co. All rights reserved.
+              <a class="link" href="#">Terms and Conditions</a> &VerticalLine;
+              <a class="link" href="#">Privacy Policy</a> &VerticalLine;
+              <a class="link" href="">Cookie Policy</a> &VerticalLine;
+              <a class="link" href="">Complaints Policy</a>
+            </p>
+            <p class="footer__footer__info">
+              Payne & Co Residentials Limited LLP. Registered in England.
+              Company No: OC304541.
+            </p>
+            <p class="footer__footer__info">
+              Registered Office Address: 151 Cranbrook Road, Ilford, Essex, IG1
+              4TA. VAT Registration No: 691917896 Trading As: Payne and Co
+            </p>
+          </div>
+
+          <div class="footer__footer--logo-box"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

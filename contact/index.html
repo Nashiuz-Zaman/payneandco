@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/img/homepage/nav-logo/nav-logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/shared.css" />
+    <link rel="stylesheet" href="/css/queries/queries-shared.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/queries/queries-contact.css" />
+
+    <script defer src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="/js/shared.js"></script>
+
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="/index.html">
+          <img
+            class="header__logo"
+            src="/img/homepage/nav-logo/nav-logo.jpg"
+            alt="company-logo"
+          />
+        </a>
+
+        <button class="button mobile-nav-button">
+          <i class="ph-dots-three"></i>
+        </button>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/">Home</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/search/">Search</a>
+            </li>
+            <li class="navigation__list--item dropdown">
+              <a class="navigation__list--link" href="#"
+                >About <i class="ph-caret-down-fill"></i
+              ></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__list--item">
+                    <a class="dropdown-menu__list--link" href="/about-team"
+                      >Meet the Team</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/about-us">About Us</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/sales">Sales</a>
+            </li>
+            <li class="navigation__list--item dropdown">
+              <a class="navigation__list--link" href="#"
+                >Lettings <i class="ph-caret-down-fill"></i
+              ></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__list--item">
+                    <a class="dropdown-menu__list--link" href="/lettings"
+                      >Lettings</a
+                    >
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      class="dropdown-menu__list--link"
+                      href="/tenant-information"
+                      >Tenant Information
+                    </a>
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      class="dropdown-menu__list--link"
+                      href="/landlord-information"
+                      >Landlord Information
+                    </a>
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      target="_blank"
+                      class="dropdown-menu__list--link"
+                      href="/img/clientmoneyprotection.pdf"
+                      >Client Money Protection Certificate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/news">News</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/guild">Guild</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/contact">Contact</a>
+            </li>
+            <li class="navigation__list--item navigation__list--search-bar">
+              <a class="navigation__list--link" href="#"
+                ><i class="ph-magnifying-glass-bold"></i
+              ></a>
+              <div class="search-box">
+                <input
+                  class="search-box__textbox"
+                  type="text"
+                  placeholder="Enter location..."
+                />
+
+                <button
+                  class="button button-primary search-box__button"
+                  type="submit"
+                >
+                  Go
+                </button>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a
+                class="navigation__list--link"
+                href="/bookfreevaluation/index.html"
+                >Book A Free Evaluation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mobile-navigation">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/">Home</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/search/">Search</a>
+            </li>
+            <li
+              data-dropdownbutton="about"
+              class="navigation__list--item dropdown mobile-dropdown-button"
+            >
+              <a class="navigation__list--link" href="#"
+                >About <i class="ph-caret-down-fill"></i
+              ></a>
+
+              <div data-dropdown="about" class="mobile-dropdown-menu">
+                <ul class="mobile-dropdown-menu__list">
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/about-team"
+                      >Meet the Team</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/about-us">About Us</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/sales">Sales</a>
+            </li>
+            <li
+              data-dropdownbutton="lettings"
+              class="navigation__list--item dropdown mobile-dropdown-button"
+            >
+              <a class="navigation__list--link" href="#"
+                >Lettings <i class="ph-caret-down-fill"></i
+              ></a>
+              <div data-dropdown="lettings" class="mobile-dropdown-menu">
+                <ul class="mobile-dropdown-menu__list">
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a class="mobile-dropdown-menu__list--link" href="/lettings"
+                      >Lettings</a
+                    >
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/tenant-information"
+                      >Tenant Information
+                    </a>
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/landlord-information"
+                      >Landlord Information
+                    </a>
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      target="_blank"
+                      class="mobile-dropdown-menu__list--link"
+                      href="/img/clientmoneyprotection.pdf"
+                      >Client Money Protection Certificate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/news">News</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/guild">Guild</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/contact">Contact</a>
+            </li>
+            <li class="navigation__list--item navigation__list--search-bar">
+              <a class="navigation__list--link" href="#"
+                ><i class="ph-magnifying-glass-bold"></i
+              ></a>
+              <div class="search-box">
+                <input
+                  class="search-box__textbox"
+                  type="text"
+                  placeholder="Enter location..."
+                />
+
+                <button
+                  class="button button-primary search-box__button"
+                  type="submit"
+                >
+                  Go
+                </button>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a
+                class="navigation__list--link"
+                href="/bookfreevaluation/index.html"
+                >Book A Free Evaluation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <div class="container">
+        <div class="contact-2-grid">
+          <section class="section-send-message">
+            <h2 class="send-message__heading">Contact Us</h2>
+
+            <p class="send-message__paragraph">
+              Please feel free to contact us should you have any questions,
+              queries or suggestions, and we would be happy to help.
+            </p>
+
+            <form>
+              <div class="input-and-label-box">
+                <label for="department">Department</label>
+
+                <select id="department">
+                  <option value="sales">Sales</option>
+                  <option value="lettings">Lettings</option>
+                </select>
+              </div>
+
+              <div class="input-and-label-box">
+                <label for="name"
+                  >Name <span class="required-asterisk">*</span></label
+                >
+                <input type="text" id="name" placeholder="Your full name" />
+              </div>
+
+              <div class="input-and-label-box">
+                <label for="email"
+                  >Email <span class="required-asterisk">*</span></label
+                >
+                <input
+                  class="short-input-box"
+                  type="email"
+                  id="email"
+                  placeholder="Email address"
+                />
+              </div>
+
+              <div class="input-and-label-box">
+                <label for="phone">Phone</label>
+                <input
+                  class="short-input-box"
+                  type="tel"
+                  id="phone"
+                  placeholder="Phone number"
+                />
+              </div>
+
+              <div class="input-and-label-box">
+                <label for="message">Message</label>
+
+                <textarea
+                  name="form"
+                  id="message"
+                  placeholder="Write your message here"
+                ></textarea>
+              </div>
+
+              <div class="check-box-box">
+                <label for="check"
+                  ><a href="#"
+                    >Agree to Privacy / Data collection policy
+                  </a></label
+                >
+                <input type="checkbox" id="check" />
+              </div>
+              <p class="indicate">
+                <span class="required-asterisk">*</span> Indicates Required
+                Fields
+              </p>
+
+              <div
+                class="g-recaptcha brochure__form__captcha"
+                data-sitekey="6LfGdBIgAAAAADLIMF11qKrv2SkXQtj670Y0Fenf"
+              ></div>
+
+              <button type="submit" class="button contact-form-button" disabled>
+                Send Message
+              </button>
+            </form>
+          </section>
+
+          <section class="section-map-and-address">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.3336943761387!2d0.06562031531060335!3d51.56211591452269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a6f4811f9765%3A0xf15e2ca9bc049ec9!2sPayne%20%26%20Co!5e0!3m2!1sen!2sbd!4v1652981246720!5m2!1sen!2sbd"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="addresses">
+              <div class="address-box">
+                <h3>Payne & Co</h3>
+                <p class="address-paragraph">
+                  151 Cranbrook Road <br />
+                  Ilford <br />
+                  IG1 4TA <br />
+                  United Kingdom
+                </p>
+
+                <div class="tel-and-email">
+                  <p class="phone">
+                    <strong>Tel:</strong>
+                    <a class="link" href="tel:020 8518 3000">020 8518 3000</a>
+                  </p>
+                  <p class="email">
+                    <a href="mailto:ilford@payneandco.co.uk"
+                      >ilford@payneandco.co.uk</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="address-box">
+                <h3>Lettings and Management office</h3>
+                <p class="address-paragraph">
+                  187 Cranbrook Road <br />
+                  Ilford <br />
+                  IG1 4TA
+                </p>
+
+                <div class="tel-and-email">
+                  <p class="phone">
+                    <strong>Tel:</strong>
+                    <a class="link" href="tel:020 8554 6233">020 8554 6233</a>
+                  </p>
+                  <p class="email">
+                    <a href="mailto:lettings@payneandco.co.uk"
+                      >lettings@payneandco.co.uk</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="address-box">
+                <h3>Associated Park Lane Office</h3>
+                <p class="address-paragraph">
+                  121 Park Lane <br />
+                  Mayfair <br />
+                  London <br />
+                  W1K 7AG
+                </p>
+
+                <div class="tel-and-email">
+                  <p class="phone">
+                    <strong>Tel:</strong>
+                    <a class="link" href="tel: 020 7629 4141"> 020 7629 4141</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="float-valuation-button">
+        <a href="#">
+          <img
+            src="/img/homepage/fixed/book-property-valuation.svg"
+            alt="book-property-valuation logo"
+        /></a>
+      </div>
+
+      <div style="visibility: hidden; opacity: 0" class="backdrop"></div>
+
+      <section
+        style="visibility: hidden; opacity: 0"
+        class="section-modal-book-valuation-hz"
+      >
+        <button class="button button-closemodal">
+          <i class="ph-x-bold"></i>
+        </button>
+
+        <div class="modal-box logo-and-instructions">
+          <div class="modal-logo-container">
+            <img src="/img/homepage/nav-logo/nav-logo.jpg" alt="company logo" />
+          </div>
+
+          <p class="modal-instructions">
+            If you want to talk through your selling, buying or renting options,
+            then please get in touch.
+          </p>
+        </div>
+
+        <div class="address-searching">
+          <h4 class="form-top-heading">I'm looking to</h4>
+
+          <div class="two-options">
+            <div class="input-label-container">
+              <div class="input-container">
+                <input
+                  id="sell"
+                  type="radio"
+                  name="choose-action"
+                  value="sell"
+                />
+                <span class="checkmark"></span>
+              </div>
+
+              <label for="sell">Sell my property</label>
+            </div>
+
+            <div class="input-label-container">
+              <div class="input-container">
+                <input id="let" type="radio" name="choose-action" value="let" />
+                <span class="checkmark"></span>
+              </div>
+
+              <label for="let">Let my property</label>
+            </div>
+          </div>
+
+          <div class="post-code">
+            <p class="label-main-form">
+              Please enter the postcode of your property and select the address
+            </p>
+
+            <div class="post-code-box--and--button">
+              <input
+                class="post-code-box"
+                type="text"
+                placeholder="Enter postcode"
+              />
+
+              <button class="button find-post-code" disabled="disabled">
+                Find <i class="ph-caret-right"></i>
+              </button>
+            </div>
+
+            <button class="button no-address">Can't find your address?</button>
+          </div>
+
+          <div class="hidden-address-box">
+            <p class="label-main-form">
+              Please enter the address of your property. *
+              <span>Required field.</span>
+            </p>
+            <form class="regular-information">
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >ADDRESS LINE 1:*</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >ADDRESS LINE 2:</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name">TOWN / CITY: *</label>
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >COUNTY / STATE:</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name">POSTAL CODE: *</label>
+                <input id="name" type="text" />
+              </div>
+
+              <button type="button" class="button back-to-address">
+                Back to address lookup
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="regular-information-box">
+          <form class="regular-information">
+            <div class="input-box">
+              <label class="label-main-form" for="name">Your Name</label>
+              <input id="name" type="text" />
+            </div>
+
+            <div class="input-box">
+              <label class="label-main-form" for="name">Contact Number</label>
+              <input id="name" type="tel" />
+            </div>
+
+            <div class="input-box">
+              <label class="label-main-form" for="name">Email</label>
+              <input id="name" type="email" />
+            </div>
+
+            <button class="button send-valuation-button">
+              Send Valuation Request
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section
+        style="visibility: hidden; opacity: 0; transform: translateY(-20%)"
+        class="section-modal-book-valuation-vt"
+      >
+        <div class="modal-property-valuation">
+          <div class="modal-property-valuation__header">
+            <h2 class="modal-property-valuation__header--heading">
+              BOOK A PROPERTY VALUATION
+            </h2>
+            <button class="button button-closemodal">
+              <i class="ph-x-bold"></i>
+            </button>
+          </div>
+
+          <div class="modal-property-valuation__main">
+            <div class="logo-box">
+              <img
+                src="/img/homepage/nav-logo/nav-logo.jpg"
+                alt="company-logo"
+              />
+            </div>
+
+            <h3 class="modal-property-valuation__main--heading">
+              Request your FREE Property Valuation
+            </h3>
+
+            <div class="form-layout">
+              <h4 class="form-top-heading">I'm looking to</h4>
+
+              <div class="two-options">
+                <div class="input-label-container">
+                  <div class="input-container">
+                    <input
+                      id="sell"
+                      type="radio"
+                      name="choose-action"
+                      value="sell"
+                    />
+                    <span class="checkmark"></span>
+                  </div>
+
+                  <label for="sell">Sell my property</label>
+                </div>
+
+                <div class="input-label-container">
+                  <div class="input-container">
+                    <input
+                      id="let"
+                      type="radio"
+                      name="choose-action"
+                      value="let"
+                    />
+                    <span class="checkmark"></span>
+                  </div>
+
+                  <label for="let">Let my property</label>
+                </div>
+              </div>
+
+              <div class="post-code-vt">
+                <p class="label-main-form">
+                  Please enter the postcode of your property and select the
+                  address
+                </p>
+
+                <div class="post-code-box--and--button">
+                  <input
+                    class="post-code-box"
+                    type="text"
+                    placeholder="Enter postcode"
+                  />
+
+                  <button class="button find-post-code" disabled="disabled">
+                    Find <i class="ph-caret-right"></i>
+                  </button>
+                </div>
+
+                <button class="button no-address-vt">
+                  Can't find your address?
+                </button>
+              </div>
+
+              <div class="hidden-address-box-vt">
+                <p class="label-main-form">
+                  Please enter the address of your property. *
+                  <span>Required field.</span>
+                </p>
+                <form class="regular-information">
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >ADDRESS LINE 1:*</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >ADDRESS LINE 2:</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >TOWN / CITY: *</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >COUNTY / STATE:</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >POSTAL CODE: *</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <button type="button" class="button back-to-address-vt">
+                    Back to address lookup
+                  </button>
+                </form>
+              </div>
+
+              <div class="regular-information-box">
+                <form class="regular-information">
+                  <div class="input-box">
+                    <label class="label-main-form" for="name">Your Name</label>
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >Contact Number</label
+                    >
+                    <input id="name" type="tel" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name">Email</label>
+                    <input id="name" type="email" />
+                  </div>
+
+                  <button class="button send-valuation-button">
+                    Send Valuation Request
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <div class="container">
+        <div class="footer__header">
+          <i class="ph-facebook-logo-thin footer__header--logo"></i
+          ><i class="ph-instagram-logo-thin footer__header--logo"></i>
+        </div>
+
+        <div class="footer__main">
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="footer__main--contact">
+            <h2 class="heading-secondary">Contact Us</h2>
+            <div class="address">
+              <h3 class="heading-tertiary">Payne & Co</h3>
+
+              <address>
+                151 Cranbrook Road <br />
+                Ilford <br />
+                IG1 4TA
+              </address>
+
+              <a class="link" href="mailto:ilford@payneandco.co.uk"
+                >ilford@payneandco.co.uk
+              </a>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!--  -->
+
+            <div class="address">
+              <h3 class="heading-tertiary">Lettings and Management</h3>
+
+              <address>
+                187 Cranbrook Road<br />
+                Ilford <br />
+                IG1 4TA
+              </address>
+              <a class="link" href="tel:020 8554 6233">020 8554 6233</a>
+              <a class="link" href="mailto:lettings@payneandco.co.uk"
+                >lettings@payneandco.co.uk
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__about">
+            <h2 class="heading-secondary">About Us</h2>
+
+            <p class="footer__about--info">
+              Established in May 1997 Payne & Co is a leading independent estate
+              agent providing a comprehensive service to our customers including
+              Residential Sales, Lettings and Property Management within the
+              London Boroughs of Redbridge, Barking & Dagenham, Havering and
+              surrounding areas.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__footer">
+          <div class="footer__footer--info-box">
+            <p class="footer__footer__info">
+              2022 &copy; Payne & Co. All rights reserved.
+              <a class="link" href="#">Terms and Conditions</a> &VerticalLine;
+              <a class="link" href="#">Privacy Policy</a> &VerticalLine;
+              <a class="link" href="">Cookie Policy</a> &VerticalLine;
+              <a class="link" href="">Complaints Policy</a>
+            </p>
+            <p class="footer__footer__info">
+              Payne & Co Residentials Limited LLP. Registered in England.
+              Company No: OC304541.
+            </p>
+            <p class="footer__footer__info">
+              Registered Office Address: 151 Cranbrook Road, Ilford, Essex, IG1
+              4TA. VAT Registration No: 691917896 Trading As: Payne and Co
+            </p>
+          </div>
+
+          <div class="footer__footer--logo-box"></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </body>
+</html>

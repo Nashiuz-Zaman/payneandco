@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/img/homepage/nav-logo/nav-logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/shared.css" />
+    <link rel="stylesheet" href="/css/queries/queries-shared.css" />
+    <link rel="stylesheet" href="/css/lettings.css" />
+
+    <script defer src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="/js/shared.js"></script>
+
+    <title>Lettings</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="/index.html">
+          <img
+            class="header__logo"
+            src="/img/homepage/nav-logo/nav-logo.jpg"
+            alt="company-logo"
+          />
+        </a>
+
+        <button class="button mobile-nav-button">
+          <i class="ph-dots-three"></i>
+        </button>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/">Home</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/search/">Search</a>
+            </li>
+            <li class="navigation__list--item dropdown">
+              <a class="navigation__list--link" href="#"
+                >About <i class="ph-caret-down-fill"></i
+              ></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__list--item">
+                    <a class="dropdown-menu__list--link" href="/about-team"
+                      >Meet the Team</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/about-us">About Us</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/sales">Sales</a>
+            </li>
+            <li class="navigation__list--item dropdown">
+              <a class="navigation__list--link" href="#"
+                >Lettings <i class="ph-caret-down-fill"></i
+              ></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__list--item">
+                    <a class="dropdown-menu__list--link" href="/lettings"
+                      >Lettings</a
+                    >
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      class="dropdown-menu__list--link"
+                      href="/tenant-information"
+                      >Tenant Information
+                    </a>
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      class="dropdown-menu__list--link"
+                      href="/landlord-information"
+                      >Landlord Information
+                    </a>
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      target="_blank"
+                      class="dropdown-menu__list--link"
+                      href="/img/clientmoneyprotection.pdf"
+                      >Client Money Protection Certificate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/news">News</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/guild">Guild</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/contact">Contact</a>
+            </li>
+            <li class="navigation__list--item navigation__list--search-bar">
+              <a class="navigation__list--link" href="#"
+                ><i class="ph-magnifying-glass-bold"></i
+              ></a>
+              <div class="search-box">
+                <input
+                  class="search-box__textbox"
+                  type="text"
+                  placeholder="Enter location..."
+                />
+
+                <button
+                  class="button button-primary search-box__button"
+                  type="submit"
+                >
+                  Go
+                </button>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a
+                class="navigation__list--link"
+                href="/bookfreevaluation/index.html"
+                >Book A Free Evaluation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mobile-navigation">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/">Home</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/search/">Search</a>
+            </li>
+            <li
+              data-dropdownbutton="about"
+              class="navigation__list--item dropdown mobile-dropdown-button"
+            >
+              <a class="navigation__list--link" href="#"
+                >About <i class="ph-caret-down-fill"></i
+              ></a>
+
+              <div data-dropdown="about" class="mobile-dropdown-menu">
+                <ul class="mobile-dropdown-menu__list">
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/about-team"
+                      >Meet the Team</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/about-us">About Us</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/sales">Sales</a>
+            </li>
+            <li
+              data-dropdownbutton="lettings"
+              class="navigation__list--item dropdown mobile-dropdown-button"
+            >
+              <a class="navigation__list--link" href="#"
+                >Lettings <i class="ph-caret-down-fill"></i
+              ></a>
+              <div data-dropdown="lettings" class="mobile-dropdown-menu">
+                <ul class="mobile-dropdown-menu__list">
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a class="mobile-dropdown-menu__list--link" href="/lettings"
+                      >Lettings</a
+                    >
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/tenant-information"
+                      >Tenant Information
+                    </a>
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/landlord-information"
+                      >Landlord Information
+                    </a>
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      target="_blank"
+                      class="mobile-dropdown-menu__list--link"
+                      href="/img/clientmoneyprotection.pdf"
+                      >Client Money Protection Certificate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/news">News</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/guild">Guild</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/contact">Contact</a>
+            </li>
+            <li class="navigation__list--item navigation__list--search-bar">
+              <a class="navigation__list--link" href="#"
+                ><i class="ph-magnifying-glass-bold"></i
+              ></a>
+              <div class="search-box">
+                <input
+                  class="search-box__textbox"
+                  type="text"
+                  placeholder="Enter location..."
+                />
+
+                <button
+                  class="button button-primary search-box__button"
+                  type="submit"
+                >
+                  Go
+                </button>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a
+                class="navigation__list--link"
+                href="/bookfreevaluation/index.html"
+                >Book A Free Evaluation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="section-hero">
+        <div class="carousel">
+          <div class="carousel__text-box animated-carousel__text-box">
+            <h1 class="heading-primary">Property Lettings</h1>
+            <a
+              class="button button-white carousel__button"
+              href="/bookfreevaluation/"
+              >Book a Free Valuation</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-two-col-text">
+        <div class="container">
+          <div class="two-col-text">
+            <div>
+              <h2 class="two-col-text__heading">PROFESSIONAL ASSOCIATIONS</h2>
+
+              <p class="two-col-text__paragraph">
+                When you instruct a solicitor, the Law Society protects you.
+                When booking a holiday most of us choose an ABTA registered
+                travel agent. These are professional bodies established to
+                maintain standards in their respective industries and protect
+                the public from malpractice.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                We are Members of The Association of Residential Letting Agents
+                (ARLA) and The National Association of Estate Agents (NAEA).
+                Member firms are kept informed of the ever changing raft of new
+                regulations and are required to adhere to a strict code of
+                practice.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Failure To Comply Can Result In Harsh Fines Or Expulsion.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Regrettably membership remains voluntary allowing many agents to
+                operate with little knowledge of the law and no insurance. For
+                the innocent client, facing prosecution for breaking laws of
+                which they were never advised is traumatic whilst litigation is
+                pointless if the agent has no insurance and cannot pay.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                PROTECTION OF CLIENTS’ MONIES
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                ARLA and NAEA both operate bonding schemes insuring all client
+                monies held by member firms. In other words, any money we hold
+                on behalf of your or your tenant is insured. An annual
+                accountant’s undertaking is required to confirm Members “Client
+                Bank Accounts” are being correctly administered.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                PROFESSIONAL INDEMNITY INSURANCE
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                To protect you further, we hold significant professional
+                indemnity insurance.
+              </p>
+
+              <h2 class="two-col-text__heading">PAYMENT OF RENT</h2>
+
+              <p class="two-col-text__paragraph">
+                Where we are instructed to process rent payments, rent will be
+                forwarded to you within five working days of receiving cleared
+                funds (except in exceptional circumstances) less agreed
+                deductions.
+              </p>
+
+              <h2 class="two-col-text__heading">RENT & LEGAL PROTECTION</h2>
+
+              <p class="two-col-text__paragraph">
+                References only report on past performance and circumstances do
+                change. To combat this we may offer "HomeLet" Rent and Legal
+                Protection, subject to terms & conditions
+              </p>
+
+              <h2 class="two-col-text__heading">SAFETY LEGISLATION</h2>
+
+              <p
+                class="two-col-text__paragraph two-col-text__paragraph--heading"
+              >
+                The Gas Safety (Installation and Use) Regulations 1998
+              </p>
+
+              <p class="two-col-text__paragraph">
+                “The Gas Appliances (Installation And Use) Regulations 1998”
+                requires all gas appliances in rented properties to be checked
+                by a Gas Safe registered gas installer annually. Any faults
+                found must be promptly rectified (also by a Gas Safe registered
+                gas installer) and detailed records kept. A copy of a current
+                inspection certificate together with evidence that remedial work
+                (if any) has been carried out must be left at the property.
+              </p>
+
+              <p
+                class="two-col-text__paragraph two-col-text__paragraph--heading"
+              >
+                Electrical Safety Standards in the Private Rented Sector
+                (England) Regulations 2020
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Landlords of privately rented accommodation must:
+              </p>
+
+              <ul class="two-col-text__paragraph--list">
+                <li>
+                  Ensure national standards for electrical safety are met. These
+                  are set out in the 18th edition of the ‘Wiring Regulations’,
+                  which are published as British Standard 7671.
+                </li>
+
+                <li>
+                  Ensure the electrical installations in their rented properties
+                  are inspected and tested by a qualified and competent person
+                  at least every 5 years.
+                </li>
+
+                <li>
+                  Obtain a report from the person conducting the inspection and
+                  test which gives the results and sets a date for the next
+                  inspection and test.
+                </li>
+
+                <li>
+                  Supply a copy of this report to the existing tenant within 28
+                  days of the inspection and test.
+                </li>
+
+                <li>
+                  Supply a copy of this report to a new tenant before they
+                  occupy the premises.
+                </li>
+
+                <li>
+                  Supply a copy of this report to any prospective tenant within
+                  28 days of receiving a request for the report.
+                </li>
+
+                <li>
+                  Supply the local authority with a copy of this report within 7
+                  days of receiving a request for a copy.
+                </li>
+
+                <li>
+                  Retain a copy of the report to give to the inspector and
+                  tester who will undertake the next inspection and test.
+                </li>
+
+                <li>
+                  Where the report shows that remedial or further investigative
+                  work is necessary, complete this work within 28 days or any
+                  shorter period if specified as necessary in the report.
+                </li>
+
+                <li>
+                  Supply written confirmation of the completion of the remedial
+                  works from the electrician to the tenant and the local
+                  authority within 28 days of completion of the works.
+                </li>
+              </ul>
+
+              <p
+                class="two-col-text__paragraph two-col-text__paragraph--heading"
+              >
+                The Furniture And Furnishings (Fire) (Safety) Regulations 1988
+                (As Amended In 1989 And 1993)
+              </p>
+
+              <p class="two-col-text__paragraph">
+                All soft furnishings supplied must be fire retardant. The
+                regulations apply to beds and mattresses, headboards, sofa beds,
+                futons etc, nursery furniture, garden furniture, scatter
+                cushions and seat pads, pillows, bean bags, loose and stretch
+                covers for furniture. Compliant items will be labelled.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Bed bases and or mattresses should carry the label “BS 7177.”
+              </p>
+
+              <p class="two-col-text__paragraph">
+                All other soft furnishings should carry the label “CARELESSNESS
+                CAUSES FIRE”.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                The legislation may seem daunting but compliance need not be
+                expensive. We deal with this every day on every property we let.
+                The regulations must be taken seriously but as a professional
+                letting agent we will guide and help you to ensure that you
+                comply and that your property is safe.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Replacing non - compliant furnishings or electrical appliances
+                is NOT always necessary - we let many properties without soft
+                furnishings and or certain electrical appliances
+              </p>
+
+              <p class="two-col-text__paragraph">Smoke Detectors</p>
+
+              <p class="two-col-text__paragraph">
+                The regulations require private rented sector landlords, from 1
+                October 2015, to have:
+              </p>
+
+              <ul class="two-col-text__paragraph--list">
+                <li>
+                  At least one smoke alarm installed on every storey of their
+                  rental property which is used as living accommodation, and
+                </li>
+
+                <li>
+                  A carbon monoxide alarm in any room used as living
+                  accommodation where solid fuel is used - after that, the
+                  landlord must make sure the alarms are in working order at the
+                  start of each new tenancy.
+                </li>
+              </ul>
+
+              <h2 class="two-col-text__heading">
+                THE LANDLORD & TENANT ACT 1985
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                Section 11 of The Landlord and Tenant Act 1985 requires
+                Landlords to:
+              </p>
+
+              <ul class="two-col-text__paragraph--list">
+                <li>
+                  Keep in repair the structure and exterior of the premises
+                  including drains, gutters and external pipes.
+                </li>
+
+                <li>
+                  Keep in repair and proper working order the installation for
+                  the supply of water, gas, electricity and for sanitation
+                </li>
+
+                <li>
+                  Keep in repair and proper working order the installations for
+                  space heating and water heating.
+                </li>
+              </ul>
+
+              <h2 class="two-col-text__heading">TAXATION</h2>
+
+              <p class="two-col-text__paragraph">
+                Rental income is liable to tax whether or not the landlord
+                resides in the UK. Tax is levied on rental profit. Mortgage
+                interest, agency charges, furniture depreciation, repairs and
+                maintenance is all taken into account. Landlords are recommended
+                to seek independent tax advice.
+              </p>
+
+              <h2 class="two-col-text__heading">Overseas Landlords</h2>
+
+              <p class="two-col-text__paragraph">
+                Under current legislation, landlords must apply for an exemption
+                certificate to be issued to us permitting us to pay the rent to
+                you gross. Only the Landlord can make the application which, if
+                granted, will be issued directly to the agent. If the property
+                is jointly owned and both owners are overseas, then exemption
+                certificates are required for both owners. Until an exemption
+                certificate is received we are legally required to withhold a
+                percentage of the net rental income as a provision against tax.
+                Tenants paying rent directly to an overseas landlord should
+                still withhold tax. The landlord has a duty of care to make the
+                tenant aware of this.
+              </p>
+
+              <h2 class="two-col-text__heading">THE DEPOSIT</h2>
+
+              <p class="two-col-text__paragraph">
+                This is held as security against damage, rent arrears and any
+                other breaches of the tenancy agreement. From 6th April 2007 all
+                tenants’ deposits held on Assured Shorthold Tenancies
+                (commencing after this date) must be protected by one of three
+                schemes. Company Lets and other forms of tenancies are exempt.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Deposits held on tenancies commencing prior to 6th April 2007
+                which are allowed to become periodic (roll on without a new
+                agreement being drawn up) need not be protected. There are two
+                insured schemes where either the agent or the landlord may hold
+                the deposit and a Custodial Scheme which is free but the scheme
+                holds the deposit.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                INVENTORY, CHECK IN AND CHECK OUT:
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                Under The Tenancy Deposit Protection Scheme, tenants must agree
+                to any deductions made from the deposit.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                In the event of a dispute that cannot be resolved (unless the
+                disputed sum exceeds £5000) the matter can be referred to a free
+                but binding dispute resolution service (or you can still choose
+                to go to Court). In any event you will need to provide
+                documentary evidence to prove the loss or damage you are
+                claiming was caused by the tenant.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Whilst it is not a legal requirement, if you cannot produce a
+                detailed inventory, signed by the tenant at the start of the
+                tenancy, together with a signed, and equally meticulous “Check
+                In” and “Check Out” report, a case examiner working for any of
+                the schemes or a Court of Law, will almost certainly award the
+                disputed sum to the tenant.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                LICENSING FOR HOUSES IN MULTIPLE OCCUPATION (HMO) - HOUSING ACT
+                2004:
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                Most properties do not require licensing but our understanding
+                is that properties affected are as follows:
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Those with 3 or more storeys, including a basement or loft
+                conversion (includes split level flats with shops beneath)
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Flats that are 3 storeys from the ground or higher – excluding
+                (we understand) purpose built flats
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Converted flats or bedsits that SHARE amenities e.g. bathroom,
+                kitchen, toilet, i.e. not completely self contained
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Licensing is required where such properties are occupied by 5 or
+                more people(including children) comprising 2 or more households,
+                who share amenities i.e. bathroom, kitchen or toilet facilities.
+                Further clarification should always be sought directly with the
+                local authority as failure to comply can result in a fine of up
+                to £20,000.
+              </p>
+            </div>
+
+            <div>
+              <p class="two-col-text__paragraph">
+                We are prepared to introduce tenants to properties requiring
+                licensing (although unless the property is already licensed, we
+                will not know if a license is required until the number of
+                tenants taking occupation, and their relationship is
+                established). However we can only accept instructions on a
+                Tenant Introduction basis.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                ENERGY PERFORMANCE CERTIFICATES (EPC):
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                From 1st April 2020, landlords must ensure the Energy
+                Performance Certificates for their lets meet a new standard.
+                This is for new and existing tenancies. On 1st April 2018, it
+                became a legal requirement for residential landlords to ensure
+                their Energy Performance Certificates (EPCs) have a minimum
+                rating of E
+              </p>
+
+              <h2 class="two-col-text__heading">INSURANCE</h2>
+
+              <p class="two-col-text__paragraph">
+                The landlord must advise their insurers if their property is
+                rented as failure to do so may invalidate the policy. As well as
+                insuring the property, landlords may also wish to consider
+                insuring their own contents and to take out public liability
+                cover in case of injury to a tenant in the property. As
+                introducers to HomeLet we can provide further information if
+                required.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                GROUND RENT AND SERVICES CHARGES
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                The landlord is responsible for the payment of ground rent and
+                service charges (but not utilities) throughout the tenancy.
+                Where we are instructed to manage the property, arrangements may
+                be made for such payments to be deducted from rents received.
+              </p>
+
+              <h2 class="two-col-text__heading">PERMISSION TO LET</h2>
+
+              <p class="two-col-text__paragraph">
+                You will require written authority from your Lender to rent the
+                property. In the case of a leasehold property permission is also
+                required from the Freeholder.
+              </p>
+
+              <h2 class="two-col-text__heading">Exterior</h2>
+
+              <p class="two-col-text__paragraph">
+                Kerb Appeal: The first thing a tenant sees is the outside of the
+                property so ensure, as far a possible that their first
+                impression is a good one. Flaking paintwork and unkempt gardens
+                are extremely off putting
+              </p>
+
+              <h2 class="two-col-text__heading">Interior</h2>
+
+              <ul class="two-col-text__paragraph--list">
+                <li>Keep it clean, tidy and uncluttered.</li>
+
+                <li>
+                  Decorate in neutral colours with plain carpets or
+                  wooden/laminate floors.
+                </li>
+
+                <li>Bathrooms and kitchens must be clean.</li>
+
+                <li>
+                  If you intend to furnish, remember that too much furniture
+                  makes a room seem smaller whilst old shabby furniture gives a
+                  bad impression.
+                </li>
+
+                <li>
+                  The tenant is not obliged to leave the property in a cleaner
+                  or better condition than it was when they took occupation.
+                </li>
+              </ul>
+
+              <h2 class="two-col-text__heading">BUY TO LET</h2>
+
+              <p class="two-col-text__paragraph">
+                “Buy to Let” was established to allow private investors to
+                acquire properties to let without the need to pay commercial
+                rates of interest. Mortgage lenders involved in the “Buy to Let”
+                scheme will take into account the level of projected rental
+                income likely to be generated from the property.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Some lenders insist that “Buy to Let” properties are let and
+                managed by ARLA agents. We recommend you discuss your proposed
+                purchase with us as buying the right property in the right
+                location is critical.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                We will be happy to speak to you about any “Buy to Let” ideas
+                you may have.
+              </p>
+
+              <h2 class="two-col-text__heading">CHOOSE THE RIGHT AGENT</h2>
+
+              <p class="two-col-text__paragraph">
+                Inexperienced landlords often assume that the more agents they
+                instruct, the more they increase their chances of finding a good
+                tenant but choosing the right letting agent is arguably more
+                important than choosing the right estate agent.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                When selling, price is generally the critical factor and it
+                generally makes little difference to most people who sells it.
+                Once the buyer moves in, if they damage the property or miss
+                mortgage payments, it’s their property and their problem.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                When letting, you trust complete strangers to look after your
+                property and pay the rent. If they damage the property or fail
+                to pay the rent, it’s your property, your mortgage and your
+                problem.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                In our view, the more agents you instruct, the greater the
+                chance of finding a poor tenant. There is nothing wrong with
+                speaking to several agents but only instruct one. A less
+                reputable agent may decide not to risk allowing the property to
+                be let by a competitor and persuade a client to accept any
+                tenant in order to secure their commission.
+              </p>
+
+              <h2 class="two-col-text__heading">OUR ADVICE</h2>
+
+              <p class="two-col-text__paragraph">
+                Always instruct a Member of NAEA or ARLA.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Maximise your chances of finding the best tenant by instructing
+                one reputable agent.
+              </p>
+
+              <h2 class="two-col-text__heading">WHY CHOOSE US?</h2>
+
+              <ul class="two-col-text__paragraph--list">
+                <li>Experience – Established in 1997</li>
+
+                <li>
+                  We manage one of the largest property local portfolios in the
+                  area (worth an estimated £33.00 million)
+                </li>
+
+                <li>
+                  Members of National Federation of Property Professionals
+                  including ARLA and NAEA
+                </li>
+
+                <li>Regulated by The Ombudsman for Estate Agents (OEA).</li>
+
+                <li>Senior personnel with experience dating back to 1987</li>
+
+                <li>
+                  Separate management department with specially trained staff &
+                  sophisticated computer back up
+                </li>
+
+                <li>Rents forwarded direct to landlords bank.</li>
+
+                <li>Rent Guarantee and Legal Protection.</li>
+
+                <li>Independent credit referencing</li>
+
+                <li>Constant supply of private and corporate tenants</li>
+
+                <li>Contractors with full public liability insurance</li>
+
+                <li>Specialist advice on Buy to Let Investment</li>
+              </ul>
+
+              <h2 class="two-col-text__heading">SERVICES</h2>
+
+              <p class="two-col-text__paragraph--heading">
+                Tenant Introduction
+              </p>
+
+              <ul class="two-col-text__paragraph--list">
+                <li>
+                  Accompanying of tenants on viewing appointments (unless by
+                  special arrangement).
+                </li>
+
+                <li>Supervising signing of the tenancy agreement.</li>
+
+                <li>
+                  Ensuring compliance with statutory safety legislation prior to
+                  tenant taking occupation.
+                </li>
+
+                <li>Obtaining references.</li>
+
+                <li>Free Independent Credit Referencing Service</li>
+
+                <li>Obtaining deposit from Tenant.</li>
+
+                <li>
+                  Serving Section 21 Notice requiring possession when tenant
+                  takes occupation (if instructed)
+                </li>
+              </ul>
+
+              <p class="two-col-text__paragraph--heading">
+                Rent Processing - as Tenant Introduction plus:
+              </p>
+
+              <ul class="two-col-text__paragraph--list">
+                <li>
+                  Forwarding of rents received, less agreed deductions - to be
+                  paid directly into your account
+                </li>
+
+                <li>Arranging for Tenant to sign standing order mandate.</li>
+
+                <li>Sending of Rent statements.</li>
+
+                <li>Sending of Rent Reminders.</li>
+
+                <li>Rent Reviews</li>
+
+                <li>Arranging tenancy extensions/continuations</li>
+              </ul>
+
+              <p class="two-col-text__paragraph--heading">
+                Full Management - as Rent Processing plus:
+              </p>
+
+              <ul class="two-col-text__paragraph--list">
+                <li>
+                  Rent & Legal Protection Cover Available (subject to terms &
+                  conditions).
+                </li>
+
+                <li>
+                  Supervising signing of inventory and condition report by
+                  Tenant.
+                </li>
+
+                <li>Property Visits.</li>
+
+                <li>
+                  Advising Landlord of any breaches of the Tenancy Agreement as
+                  made aware.
+                </li>
+
+                <li>Rent Reviews</li>
+
+                <li>Arranging tenancy extensions/continuations</li>
+              </ul>
+
+              <h2 class="two-col-text__heading">Contact Us</h2>
+              <div class="contact-info-normal">
+                <div class="address">
+                  <h3 class="heading-tertiary">Payne & Co</h3>
+
+                  <address>
+                    151 Cranbrook Road <br />
+                    Ilford <br />
+                    IG1 4TA
+                  </address>
+
+                  <a class="link" href="mailto:ilford@payneandco.co.uk"
+                    >ilford@payneandco.co.uk
+                  </a>
+                </div>
+
+                <div class="address">
+                  <h3 class="heading-tertiary">Lettings and Management</h3>
+
+                  <address>
+                    187 Cranbrook Road<br />
+                    Ilford <br />
+                    IG1 4TA
+                  </address>
+                  <a class="link" href="tel:020 8554 6233">020 8554 6233</a>
+                  <a class="link" href="mailto:lettings@payneandco.co.uk"
+                    >lettings@payneandco.co.uk
+                  </a>
+                </div>
+              </div>
+
+              <p class="two-col-text__paragraph--heading">About Us</p>
+
+              <p class="two-col-text__paragraph">
+                Established in May 1997 Payne and Co is a leading independent
+                estate agent providing a comprehensive service to our customers
+                including Residential sales, Lettings and Property Management
+                within the London Boroughs of Redbridge, Barking & Dagenham,
+                Havering and surrounding areas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.3336943761387!2d0.06562031531060335!3d51.56211591452269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a6f4811f9765%3A0xf15e2ca9bc049ec9!2sPayne%20%26%20Co!5e0!3m2!1sen!2sbd!4v1652981246720!5m2!1sen!2sbd"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <div class="float-valuation-button">
+        <a href="#">
+          <img
+            src="/img/homepage/fixed/book-property-valuation.svg"
+            alt="book-property-valuation logo"
+        /></a>
+      </div>
+
+      <div style="visibility: hidden; opacity: 0" class="backdrop"></div>
+
+      <section
+        style="visibility: hidden; opacity: 0"
+        class="section-modal-book-valuation-hz"
+      >
+        <button class="button button-closemodal">
+          <i class="ph-x-bold"></i>
+        </button>
+
+        <div class="modal-box logo-and-instructions">
+          <div class="modal-logo-container">
+            <img src="/img/homepage/nav-logo/nav-logo.jpg" alt="company logo" />
+          </div>
+
+          <p class="modal-instructions">
+            If you want to talk through your selling, buying or renting options,
+            then please get in touch.
+          </p>
+        </div>
+
+        <div class="address-searching">
+          <h4 class="form-top-heading">I'm looking to</h4>
+
+          <div class="two-options">
+            <div class="input-label-container">
+              <div class="input-container">
+                <input
+                  id="sell"
+                  type="radio"
+                  name="choose-action"
+                  value="sell"
+                />
+                <span class="checkmark"></span>
+              </div>
+
+              <label for="sell">Sell my property</label>
+            </div>
+
+            <div class="input-label-container">
+              <div class="input-container">
+                <input id="let" type="radio" name="choose-action" value="let" />
+                <span class="checkmark"></span>
+              </div>
+
+              <label for="let">Let my property</label>
+            </div>
+          </div>
+
+          <div class="post-code">
+            <p class="label-main-form">
+              Please enter the postcode of your property and select the address
+            </p>
+
+            <div class="post-code-box--and--button">
+              <input
+                class="post-code-box"
+                type="text"
+                placeholder="Enter postcode"
+              />
+
+              <button class="button find-post-code" disabled="disabled">
+                Find <i class="ph-caret-right"></i>
+              </button>
+            </div>
+
+            <button class="button no-address">Can't find your address?</button>
+          </div>
+
+          <div class="hidden-address-box">
+            <p class="label-main-form">
+              Please enter the address of your property. *
+              <span>Required field.</span>
+            </p>
+            <form class="regular-information">
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >ADDRESS LINE 1:*</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >ADDRESS LINE 2:</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name">TOWN / CITY: *</label>
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >COUNTY / STATE:</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name">POSTAL CODE: *</label>
+                <input id="name" type="text" />
+              </div>
+
+              <button type="button" class="button back-to-address">
+                Back to address lookup
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="regular-information-box">
+          <form class="regular-information">
+            <div class="input-box">
+              <label class="label-main-form" for="name">Your Name</label>
+              <input id="name" type="text" />
+            </div>
+
+            <div class="input-box">
+              <label class="label-main-form" for="name">Contact Number</label>
+              <input id="name" type="tel" />
+            </div>
+
+            <div class="input-box">
+              <label class="label-main-form" for="name">Email</label>
+              <input id="name" type="email" />
+            </div>
+
+            <button class="button send-valuation-button">
+              Send Valuation Request
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section
+        style="visibility: hidden; opacity: 0; transform: translateY(-20%)"
+        class="section-modal-book-valuation-vt"
+      >
+        <div class="modal-property-valuation">
+          <div class="modal-property-valuation__header">
+            <h2 class="modal-property-valuation__header--heading">
+              BOOK A PROPERTY VALUATION
+            </h2>
+            <button class="button button-closemodal">
+              <i class="ph-x-bold"></i>
+            </button>
+          </div>
+
+          <div class="modal-property-valuation__main">
+            <div class="logo-box">
+              <img
+                src="/img/homepage/nav-logo/nav-logo.jpg"
+                alt="company-logo"
+              />
+            </div>
+
+            <h3 class="modal-property-valuation__main--heading">
+              Request your FREE Property Valuation
+            </h3>
+
+            <div class="form-layout">
+              <h4 class="form-top-heading">I'm looking to</h4>
+
+              <div class="two-options">
+                <div class="input-label-container">
+                  <div class="input-container">
+                    <input
+                      id="sell"
+                      type="radio"
+                      name="choose-action"
+                      value="sell"
+                    />
+                    <span class="checkmark"></span>
+                  </div>
+
+                  <label for="sell">Sell my property</label>
+                </div>
+
+                <div class="input-label-container">
+                  <div class="input-container">
+                    <input
+                      id="let"
+                      type="radio"
+                      name="choose-action"
+                      value="let"
+                    />
+                    <span class="checkmark"></span>
+                  </div>
+
+                  <label for="let">Let my property</label>
+                </div>
+              </div>
+
+              <div class="post-code-vt">
+                <p class="label-main-form">
+                  Please enter the postcode of your property and select the
+                  address
+                </p>
+
+                <div class="post-code-box--and--button">
+                  <input
+                    class="post-code-box"
+                    type="text"
+                    placeholder="Enter postcode"
+                  />
+
+                  <button class="button find-post-code" disabled="disabled">
+                    Find <i class="ph-caret-right"></i>
+                  </button>
+                </div>
+
+                <button class="button no-address-vt">
+                  Can't find your address?
+                </button>
+              </div>
+
+              <div class="hidden-address-box-vt">
+                <p class="label-main-form">
+                  Please enter the address of your property. *
+                  <span>Required field.</span>
+                </p>
+                <form class="regular-information">
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >ADDRESS LINE 1:*</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >ADDRESS LINE 2:</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >TOWN / CITY: *</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >COUNTY / STATE:</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >POSTAL CODE: *</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <button type="button" class="button back-to-address-vt">
+                    Back to address lookup
+                  </button>
+                </form>
+              </div>
+
+              <div class="regular-information-box">
+                <form class="regular-information">
+                  <div class="input-box">
+                    <label class="label-main-form" for="name">Your Name</label>
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >Contact Number</label
+                    >
+                    <input id="name" type="tel" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name">Email</label>
+                    <input id="name" type="email" />
+                  </div>
+
+                  <button class="button send-valuation-button">
+                    Send Valuation Request
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <div class="container">
+        <div class="footer__header">
+          <i class="ph-facebook-logo-thin footer__header--logo"></i
+          ><i class="ph-instagram-logo-thin footer__header--logo"></i>
+        </div>
+
+        <div class="footer__main">
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="footer__main--contact">
+            <h2 class="heading-secondary">Contact Us</h2>
+            <div class="address">
+              <h3 class="heading-tertiary">Payne & Co</h3>
+
+              <address>
+                151 Cranbrook Road <br />
+                Ilford <br />
+                IG1 4TA
+              </address>
+
+              <a class="link" href="mailto:ilford@payneandco.co.uk"
+                >ilford@payneandco.co.uk
+              </a>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!--  -->
+
+            <div class="address">
+              <h3 class="heading-tertiary">Lettings and Management</h3>
+
+              <address>
+                187 Cranbrook Road<br />
+                Ilford <br />
+                IG1 4TA
+              </address>
+              <a class="link" href="tel:020 8554 6233">020 8554 6233</a>
+              <a class="link" href="mailto:lettings@payneandco.co.uk"
+                >lettings@payneandco.co.uk
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__about">
+            <h2 class="heading-secondary">About Us</h2>
+
+            <p class="footer__about--info">
+              Established in May 1997 Payne & Co is a leading independent estate
+              agent providing a comprehensive service to our customers including
+              Residential Sales, Lettings and Property Management within the
+              London Boroughs of Redbridge, Barking & Dagenham, Havering and
+              surrounding areas.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__footer">
+          <div class="footer__footer--info-box">
+            <p class="footer__footer__info">
+              2022 &copy; Payne & Co. All rights reserved.
+              <a class="link" href="#">Terms and Conditions</a> &VerticalLine;
+              <a class="link" href="#">Privacy Policy</a> &VerticalLine;
+              <a class="link" href="">Cookie Policy</a> &VerticalLine;
+              <a class="link" href="">Complaints Policy</a>
+            </p>
+            <p class="footer__footer__info">
+              Payne & Co Residentials Limited LLP. Registered in England.
+              Company No: OC304541.
+            </p>
+            <p class="footer__footer__info">
+              Registered Office Address: 151 Cranbrook Road, Ilford, Essex, IG1
+              4TA. VAT Registration No: 691917896 Trading As: Payne and Co
+            </p>
+          </div>
+
+          <div class="footer__footer--logo-box"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

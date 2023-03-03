@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/img/homepage/nav-logo/nav-logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/shared.css" />
+    <link rel="stylesheet" href="/css/queries/queries-shared.css" />
+    <link rel="stylesheet" href="/css/landlord-information.css" />
+
+    <script defer src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="/js/shared.js"></script>
+
+    <title>Landlord Information</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="/index.html">
+          <img
+            class="header__logo"
+            src="/img/homepage/nav-logo/nav-logo.jpg"
+            alt="company-logo"
+          />
+        </a>
+
+        <button class="button mobile-nav-button">
+          <i class="ph-dots-three"></i>
+        </button>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/">Home</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/search/">Search</a>
+            </li>
+            <li class="navigation__list--item dropdown">
+              <a class="navigation__list--link" href="#"
+                >About <i class="ph-caret-down-fill"></i
+              ></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__list--item">
+                    <a class="dropdown-menu__list--link" href="/about-team"
+                      >Meet the Team</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/about-us">About Us</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/sales">Sales</a>
+            </li>
+            <li class="navigation__list--item dropdown">
+              <a class="navigation__list--link" href="#"
+                >Lettings <i class="ph-caret-down-fill"></i
+              ></a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__list--item">
+                    <a class="dropdown-menu__list--link" href="/lettings"
+                      >Lettings</a
+                    >
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      class="dropdown-menu__list--link"
+                      href="/tenant-information"
+                      >Tenant Information
+                    </a>
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      class="dropdown-menu__list--link"
+                      href="/landlord-information"
+                      >Landlord Information
+                    </a>
+                  </li>
+                  <li class="dropdown-menu__list--item">
+                    <a
+                      target="_blank"
+                      class="dropdown-menu__list--link"
+                      href="/img/clientmoneyprotection.pdf"
+                      >Client Money Protection Certificate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/news">News</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/guild">Guild</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/contact">Contact</a>
+            </li>
+            <li class="navigation__list--item navigation__list--search-bar">
+              <a class="navigation__list--link" href="#"
+                ><i class="ph-magnifying-glass-bold"></i
+              ></a>
+              <div class="search-box">
+                <input
+                  class="search-box__textbox"
+                  type="text"
+                  placeholder="Enter location..."
+                />
+
+                <button
+                  class="button button-primary search-box__button"
+                  type="submit"
+                >
+                  Go
+                </button>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a
+                class="navigation__list--link"
+                href="/bookfreevaluation/index.html"
+                >Book A Free Evaluation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mobile-navigation">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/">Home</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/search/">Search</a>
+            </li>
+            <li
+              data-dropdownbutton="about"
+              class="navigation__list--item dropdown mobile-dropdown-button"
+            >
+              <a class="navigation__list--link" href="#"
+                >About <i class="ph-caret-down-fill"></i
+              ></a>
+
+              <div data-dropdown="about" class="mobile-dropdown-menu">
+                <ul class="mobile-dropdown-menu__list">
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/about-team"
+                      >Meet the Team</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/about-us">About Us</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/sales">Sales</a>
+            </li>
+            <li
+              data-dropdownbutton="lettings"
+              class="navigation__list--item dropdown mobile-dropdown-button"
+            >
+              <a class="navigation__list--link" href="#"
+                >Lettings <i class="ph-caret-down-fill"></i
+              ></a>
+              <div data-dropdown="lettings" class="mobile-dropdown-menu">
+                <ul class="mobile-dropdown-menu__list">
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a class="mobile-dropdown-menu__list--link" href="/lettings"
+                      >Lettings</a
+                    >
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/tenant-information"
+                      >Tenant Information
+                    </a>
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      class="mobile-dropdown-menu__list--link"
+                      href="/landlord-information"
+                      >Landlord Information
+                    </a>
+                  </li>
+                  <li class="mobile-dropdown-menu__list--item">
+                    <a
+                      target="_blank"
+                      class="mobile-dropdown-menu__list--link"
+                      href="/img/clientmoneyprotection.pdf"
+                      >Client Money Protection Certificate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/news">News</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/guild">Guild</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="/contact">Contact</a>
+            </li>
+            <li class="navigation__list--item navigation__list--search-bar">
+              <a class="navigation__list--link" href="#"
+                ><i class="ph-magnifying-glass-bold"></i
+              ></a>
+              <div class="search-box">
+                <input
+                  class="search-box__textbox"
+                  type="text"
+                  placeholder="Enter location..."
+                />
+
+                <button
+                  class="button button-primary search-box__button"
+                  type="submit"
+                >
+                  Go
+                </button>
+              </div>
+            </li>
+            <li class="navigation__list--item">
+              <a
+                class="navigation__list--link"
+                href="/bookfreevaluation/index.html"
+                >Book A Free Evaluation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="section-hero">
+        <div class="carousel">
+          <div class="carousel__text-box animated-carousel__text-box">
+            <h1 class="heading-primary">Landlord Information</h1>
+            <a
+              class="button button-white carousel__button"
+              href="/bookfreevaluation/"
+              >Book a Free Valuation</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-two-col-text">
+        <div class="container">
+          <div class="two-col-text">
+            <div>
+              <h2 class="two-col-text__heading">
+                New Right To Rent Rules February 2016.
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                Right to Rent will affect every landlord in England from
+                February 1st, so if you don’t know what it is and why it’s
+                important, read on.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                For every new tenancy starting on or after February 1st,
+                landlords (or their agents) will have to check that the tenant
+                and every adult living with them in the property has a legal
+                right to be in the UK.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                That means checking their passport or some other form of photo
+                ID and, if they aren’t a national of a country within the
+                European Economic Area or Switzerland, making sure they have
+                been granted unlimited or time-limited leave to remain in the
+                UK.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                In most cases, this will mean verifying they have a valid
+                document (i.e permit/visa) issued by the Home Office.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                To avoid accusations of race discrimination, you’ll need to
+                check the ID of every new tenant, although there’s no
+                requirement to check children, even if they turn 18 during the
+                tenancy and tenants who moved in before Feb 1 are also exempt.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                These checks must be carried out before the start of the tenancy
+                agreement but no more than 28 days in advance for anyone who
+                doesn’t have a right to live here permanently.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                For more information, go to Right to Rent Immigration checks:
+                landlord's code of practice on the Home Office website or call
+                the Home Office Helpline on 0300 069 9799.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                Credit Checking - How Safe Is Your Property?
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                We conduct thorough credit checks on prospective tenants.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                We also check with previous landlords for information as to
+                suitability, (All checks are via HomeLet) and reserve the right
+                to decline any application.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                After all, your home is very precious, and we take our
+                responsibilities very seriously. Our rental arrears are low, and
+                rent guarantee can be arranged if required
+              </p>
+
+              <h2 class="two-col-text__heading">Rental Guarantee</h2>
+
+              <p class="two-col-text__paragraph">
+                If your property is being managed by Payne & Co, we may offer a
+                rental guarantee cover for 12 months, at an additional fee.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Should you wish to continue with this service, you will be
+                charged under our enhanced management fee
+              </p>
+
+              <p class="two-col-text__paragraph">
+                This guarantee is offered subject to satisfactory references and
+                status of the tenant.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                The guarantee includes an excess period of one month.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                Drafting Of Leases And Useful Reminders
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                In addition to the preparation of all the legal documents
+                (Leases & Notices), we also provide our landlords with a lot of
+                practical advice to make the process as smooth as possible.
+              </p>
+
+              <h2 class="two-col-text__heading">Damage Deposits</h2>
+
+              <p class="two-col-text__paragraph">
+                A damage deposit equivalent of 5 Weeks rent is usually taken and
+                held in a Clients Account until the end of the tenancy.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Upon vacating, we re-inspect the property, then refund within a
+                maximum of 14 days (assuming there is no dispute).
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Our client account is protected by the ARLA Rules of Conduct,
+                and the deposits themeselves must be protected by a Tenancy
+                Deposit Scheme. Payne and Co are members of The Dispute Service
+                and we adhere to their rules to protect the deposits held.
+              </p>
+            </div>
+
+            <div>
+              <h2 class="two-col-text__heading">Inspection</h2>
+
+              <p class="two-col-text__paragraph">
+                We inspect the property every 4 months of the tenancy. Our staff
+                will carry out this inspection, and a written report is then
+                sent to the landlord for them to act on any non-urgent issues.
+              </p>
+
+              <h2 class="two-col-text__heading">Rent Payments</h2>
+
+              <p class="two-col-text__paragraph">
+                We collect rent on a calendar monthly basis, usually in the
+                first week of every month.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                As we always collect our rents at this time, payment will
+                usually be made to landlords between the 8th and the 12th of
+                every month.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Therefore multiple landlords always receive their rent the same
+                time every month. Rents are paid direct into the landlord’s
+                account.
+              </p>
+
+              <h2 class="two-col-text__heading">Repairs - Who Pays?</h2>
+
+              <p class="two-col-text__paragraph">
+                All repairs are organised by our office, and landlords are
+                consulted regarding any amounts in excess of £300.00.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                We undertake to ensure all repairs are genuine, and carried out
+                by competent professionals. Full details are provided on our
+                information packs.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Members of the Association of Residential Letting Agents (ARLA)
+              </p>
+
+              <p class="two-col-text__paragraph">
+                Our letting office is a member of ARLA, which is the only
+                professional self-regulating body to be solely concerned with
+                lettings.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                Why Should A Landlord Or Tenant Seek Out An ARLA Member?
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                Probity and Protection - ARLA leads the industry in setting and
+                regulating the highest standards in the industry and demands
+                certain levels of professionalism and commitment to customer
+                service from its membership.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                ARLA members are required to work within a robust Code of
+                Practice, which covers the key stages in letting and managing a
+                property.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                There are comprehensive membership Byelaws which include
+                compliance with such issues as handling and accounting for
+                Clients’ money; the mandatory ARLA Client Money Protection
+                Bonding Scheme; Professional Indemnity Insurance; Dealing with
+                Complaints and Disciplinary Procedures.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                ARLA members are required to employ a minimum of at least one
+                member of staff, in any office, who holds a suitable industry
+                qualification, recognised by the Association.
+              </p>
+
+              <p class="two-col-text__paragraph">
+                ARLA keeps it members up to date with changes in legislation and
+                provides wide-ranging training and guidance to help members
+                understand and interpret all aspects of letting and managing a
+                property.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                Why Should A Landlord Or Tenant Seek Out An ARLA Member?
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                You will find our charges to be more than competitive with
+                discounted rates for managed properties, we also offer special
+                incentive rates to landlords of multiple properties (three or
+                more) please feel free to contact Graham Jones or Colin McComas
+                on 0208 554 6233 to discuss our charging structure further.
+              </p>
+
+              <h2 class="two-col-text__heading">
+                Management Guide Terms & Conditions
+              </h2>
+
+              <p class="two-col-text__paragraph">
+                Payne & Co offer a free and informative management guide that
+                can help all prospective landlords through the complicated and
+                sometimes difficult process of understanding the rental
+                procedure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.3336943761387!2d0.06562031531060335!3d51.56211591452269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a6f4811f9765%3A0xf15e2ca9bc049ec9!2sPayne%20%26%20Co!5e0!3m2!1sen!2sbd!4v1652981246720!5m2!1sen!2sbd"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <div class="float-valuation-button">
+        <a href="#">
+          <img
+            src="/img/homepage/fixed/book-property-valuation.svg"
+            alt="book-property-valuation logo"
+        /></a>
+      </div>
+
+      <div style="visibility: hidden; opacity: 0" class="backdrop"></div>
+
+      <section
+        style="visibility: hidden; opacity: 0"
+        class="section-modal-book-valuation-hz"
+      >
+        <button class="button button-closemodal">
+          <i class="ph-x-bold"></i>
+        </button>
+
+        <div class="modal-box logo-and-instructions">
+          <div class="modal-logo-container">
+            <img src="/img/homepage/nav-logo/nav-logo.jpg" alt="company logo" />
+          </div>
+
+          <p class="modal-instructions">
+            If you want to talk through your selling, buying or renting options,
+            then please get in touch.
+          </p>
+        </div>
+
+        <div class="address-searching">
+          <h4 class="form-top-heading">I'm looking to</h4>
+
+          <div class="two-options">
+            <div class="input-label-container">
+              <div class="input-container">
+                <input
+                  id="sell"
+                  type="radio"
+                  name="choose-action"
+                  value="sell"
+                />
+                <span class="checkmark"></span>
+              </div>
+
+              <label for="sell">Sell my property</label>
+            </div>
+
+            <div class="input-label-container">
+              <div class="input-container">
+                <input id="let" type="radio" name="choose-action" value="let" />
+                <span class="checkmark"></span>
+              </div>
+
+              <label for="let">Let my property</label>
+            </div>
+          </div>
+
+          <div class="post-code">
+            <p class="label-main-form">
+              Please enter the postcode of your property and select the address
+            </p>
+
+            <div class="post-code-box--and--button">
+              <input
+                class="post-code-box"
+                type="text"
+                placeholder="Enter postcode"
+              />
+
+              <button class="button find-post-code" disabled="disabled">
+                Find <i class="ph-caret-right"></i>
+              </button>
+            </div>
+
+            <button class="button no-address">Can't find your address?</button>
+          </div>
+
+          <div class="hidden-address-box">
+            <p class="label-main-form">
+              Please enter the address of your property. *
+              <span>Required field.</span>
+            </p>
+            <form class="regular-information">
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >ADDRESS LINE 1:*</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >ADDRESS LINE 2:</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name">TOWN / CITY: *</label>
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name"
+                  >COUNTY / STATE:</label
+                >
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-box">
+                <label class="label-main-form" for="name">POSTAL CODE: *</label>
+                <input id="name" type="text" />
+              </div>
+
+              <button type="button" class="button back-to-address">
+                Back to address lookup
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="regular-information-box">
+          <form class="regular-information">
+            <div class="input-box">
+              <label class="label-main-form" for="name">Your Name</label>
+              <input id="name" type="text" />
+            </div>
+
+            <div class="input-box">
+              <label class="label-main-form" for="name">Contact Number</label>
+              <input id="name" type="tel" />
+            </div>
+
+            <div class="input-box">
+              <label class="label-main-form" for="name">Email</label>
+              <input id="name" type="email" />
+            </div>
+
+            <button class="button send-valuation-button">
+              Send Valuation Request
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section
+        style="visibility: hidden; opacity: 0; transform: translateY(-20%)"
+        class="section-modal-book-valuation-vt"
+      >
+        <div class="modal-property-valuation">
+          <div class="modal-property-valuation__header">
+            <h2 class="modal-property-valuation__header--heading">
+              BOOK A PROPERTY VALUATION
+            </h2>
+            <button class="button button-closemodal">
+              <i class="ph-x-bold"></i>
+            </button>
+          </div>
+
+          <div class="modal-property-valuation__main">
+            <div class="logo-box">
+              <img
+                src="/img/homepage/nav-logo/nav-logo.jpg"
+                alt="company-logo"
+              />
+            </div>
+
+            <h3 class="modal-property-valuation__main--heading">
+              Request your FREE Property Valuation
+            </h3>
+
+            <div class="form-layout">
+              <h4 class="form-top-heading">I'm looking to</h4>
+
+              <div class="two-options">
+                <div class="input-label-container">
+                  <div class="input-container">
+                    <input
+                      id="sell"
+                      type="radio"
+                      name="choose-action"
+                      value="sell"
+                    />
+                    <span class="checkmark"></span>
+                  </div>
+
+                  <label for="sell">Sell my property</label>
+                </div>
+
+                <div class="input-label-container">
+                  <div class="input-container">
+                    <input
+                      id="let"
+                      type="radio"
+                      name="choose-action"
+                      value="let"
+                    />
+                    <span class="checkmark"></span>
+                  </div>
+
+                  <label for="let">Let my property</label>
+                </div>
+              </div>
+
+              <div class="post-code-vt">
+                <p class="label-main-form">
+                  Please enter the postcode of your property and select the
+                  address
+                </p>
+
+                <div class="post-code-box--and--button">
+                  <input
+                    class="post-code-box"
+                    type="text"
+                    placeholder="Enter postcode"
+                  />
+
+                  <button class="button find-post-code" disabled="disabled">
+                    Find <i class="ph-caret-right"></i>
+                  </button>
+                </div>
+
+                <button class="button no-address-vt">
+                  Can't find your address?
+                </button>
+              </div>
+
+              <div class="hidden-address-box-vt">
+                <p class="label-main-form">
+                  Please enter the address of your property. *
+                  <span>Required field.</span>
+                </p>
+                <form class="regular-information">
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >ADDRESS LINE 1:*</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >ADDRESS LINE 2:</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >TOWN / CITY: *</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >COUNTY / STATE:</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >POSTAL CODE: *</label
+                    >
+                    <input id="name" type="text" />
+                  </div>
+
+                  <button type="button" class="button back-to-address-vt">
+                    Back to address lookup
+                  </button>
+                </form>
+              </div>
+
+              <div class="regular-information-box">
+                <form class="regular-information">
+                  <div class="input-box">
+                    <label class="label-main-form" for="name">Your Name</label>
+                    <input id="name" type="text" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name"
+                      >Contact Number</label
+                    >
+                    <input id="name" type="tel" />
+                  </div>
+
+                  <div class="input-box">
+                    <label class="label-main-form" for="name">Email</label>
+                    <input id="name" type="email" />
+                  </div>
+
+                  <button class="button send-valuation-button">
+                    Send Valuation Request
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <div class="container">
+        <div class="footer__header">
+          <i class="ph-facebook-logo-thin footer__header--logo"></i
+          ><i class="ph-instagram-logo-thin footer__header--logo"></i>
+        </div>
+
+        <div class="footer__main">
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="footer__main--contact">
+            <h2 class="heading-secondary">Contact Us</h2>
+            <div class="address">
+              <h3 class="heading-tertiary">Payne & Co</h3>
+
+              <address>
+                151 Cranbrook Road <br />
+                Ilford <br />
+                IG1 4TA
+              </address>
+
+              <a class="link" href="mailto:ilford@payneandco.co.uk"
+                >ilford@payneandco.co.uk
+              </a>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!--  -->
+
+            <div class="address">
+              <h3 class="heading-tertiary">Lettings and Management</h3>
+
+              <address>
+                187 Cranbrook Road<br />
+                Ilford <br />
+                IG1 4TA
+              </address>
+              <a class="link" href="tel:020 8554 6233">020 8554 6233</a>
+              <a class="link" href="mailto:lettings@payneandco.co.uk"
+                >lettings@payneandco.co.uk
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__about">
+            <h2 class="heading-secondary">About Us</h2>
+
+            <p class="footer__about--info">
+              Established in May 1997 Payne & Co is a leading independent estate
+              agent providing a comprehensive service to our customers including
+              Residential Sales, Lettings and Property Management within the
+              London Boroughs of Redbridge, Barking & Dagenham, Havering and
+              surrounding areas.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__footer">
+          <div class="footer__footer--info-box">
+            <p class="footer__footer__info">
+              2022 &copy; Payne & Co. All rights reserved.
+              <a class="link" href="#">Terms and Conditions</a> &VerticalLine;
+              <a class="link" href="#">Privacy Policy</a> &VerticalLine;
+              <a class="link" href="">Cookie Policy</a> &VerticalLine;
+              <a class="link" href="">Complaints Policy</a>
+            </p>
+            <p class="footer__footer__info">
+              Payne & Co Residentials Limited LLP. Registered in England.
+              Company No: OC304541.
+            </p>
+            <p class="footer__footer__info">
+              Registered Office Address: 151 Cranbrook Road, Ilford, Essex, IG1
+              4TA. VAT Registration No: 691917896 Trading As: Payne and Co
+            </p>
+          </div>
+
+          <div class="footer__footer--logo-box"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
